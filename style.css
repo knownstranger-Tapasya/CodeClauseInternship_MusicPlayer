@@ -1,0 +1,225 @@
+/* styles.css */
+
+
+/* Set body background color */
+
+body {
+    background-color: lightgreen;
+    /*Smoothlytransitionthebackgroundcolor*/
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+    -ms-transition: background-color .5s;
+    -o-transition: background-color .5s;
+}
+
+
+/* Main container styles */
+
+.player {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Sidebar styles */
+
+.sidebar {
+    width: 300px;
+    /* Adjust width as needed */
+    background-color: #000000;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.sidebar .playlist {
+    /* Add playlist styles here */
+}
+
+.sidebar form {
+    margin-top: 20px;
+}
+
+.sidebar input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sidebar button[type="submit"] {
+    margin: 5px;
+    margin-left: -1px;
+    padding: 10px 20px;
+    background-color: #80878d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar button[type="submit"]:hover {
+    background-color: #2f7177ad;
+}
+
+
+/* Styles for track details */
+
+.details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+
+/* Styles for track art */
+
+.track-art {
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    background-image: url("https://images.pexels.com/photos/262034/pexels-photo-262034.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-size: cover;
+    border-radius: 15%;
+}
+
+
+/* Styles for now playing text */
+
+.now-playing {
+    font-size: 1rem;
+}
+
+
+/* Styles for track name */
+
+.track-name {
+    font-size: 3rem;
+}
+
+
+/* Styles for track artist */
+
+.track-artist {
+    font-size: 1.5rem;
+}
+
+
+/* Styles for control buttons */
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/* Styles for control buttons */
+
+.playpause-track,
+.prev-track,
+.next-track {
+    padding: 25px;
+    opacity: 0.8;
+    /* Smoothly transition the opacity */
+    transition: opacity .2s;
+}
+
+
+/* Hover styles for control buttons */
+
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+    opacity: 1.0;
+}
+
+
+/* Styles for slider container */
+
+.slider_container {
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Styles for sliders */
+
+.seek_slider,
+.volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+
+/* Styles for slider thumbs */
+
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+/* Hover styles for sliders */
+
+.seek_slider:hover,
+.volume_slider:hover {
+    opacity: 1.0;
+}
+
+
+/* Styles for current time and total duration */
+
+.current-time,
+.total-duration {
+    padding: 10px;
+}
+
+
+/* Styles for volume icons */
+
+i.fa-volume-down,
+i.fa-volume-up {
+    padding: 10px;
+}
+
+
+/* Styles for control icons */
+
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+    cursor: pointer;
+}
